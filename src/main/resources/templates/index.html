@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8fc">
+    <meta name="description" content="Tu espacio para descubrir, aprender y empezar con buen pie.">
+    <title>Inicio | Nexo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/styles.css}" href="/css/styles.css">
+</head>
+<body>
+<header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Nexo, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">n</span>
+        <span>nexo<span class="brand-dot">.</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+        <a class="nav-link active" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#descubre">Descubre</a>
+        <a class="nav-link" href="#recursos">Recursos</a>
+    </nav>
+    <a class="profile-link" href="mailto:hola@nexo.example">
+        <span class="profile-avatar" aria-hidden="true">H</span>
+        <span>Hola, bienvenida/o</span>
+        <span class="chevron" aria-hidden="true">⌄</span>
+    </a>
+</header>
+
+<main id="inicio">
+    <section class="welcome container" aria-labelledby="welcome-title">
+        <div class="welcome-copy">
+            <span class="eyebrow"><span class="sparkle" aria-hidden="true">✦</span> TU ESPACIO EMPIEZA AQUÍ</span>
+            <h1 id="welcome-title">¡Qué bueno<br>tenerte <span>aquí!</span></h1>
+            <p class="welcome-description">Este es tu lugar para descubrir todo lo que puedes hacer. Ponte cómodo/a, explora a tu ritmo y empecemos algo genial.</p>
+            <a class="button button-primary" href="#descubre">
+                Explorar mi espacio <span aria-hidden="true">→</span>
+            </a>
+            <div class="welcome-note">
+                <span class="note-icon" aria-hidden="true">♡</span>
+                <span>Nos alegra mucho que estés aquí</span>
+            </div>
+        </div>
+        <div class="welcome-art" aria-label="Ilustración de bienvenida" role="img">
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <div class="art-sun"></div>
+            <div class="art-card card-back"></div>
+            <div class="art-card card-front">
+                <div class="card-top"><span></span><span></span><span></span></div>
+                <div class="card-content">
+                    <span class="card-flower" aria-hidden="true">✳</span>
+                    <span class="card-label">NUEVOS COMIENZOS</span>
+                    <span class="card-lines"></span>
+                    <span class="card-lines short"></span>
+                    <span class="card-button"></span>
+                </div>
+            </div>
+            <span class="floating-star star-one" aria-hidden="true">✦</span>
+            <span class="floating-star star-two" aria-hidden="true">✳</span>
+            <span class="floating-dot dot-one" aria-hidden="true"></span>
+            <span class="floating-dot dot-two" aria-hidden="true"></span>
+            <div class="art-caption"><span class="caption-check" aria-hidden="true">✓</span> Todo listo para empezar</div>
+        </div>
+    </section>
+
+    <section class="discover container" id="descubre" aria-labelledby="discover-title">
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">UN BUEN LUGAR PARA EMPEZAR</span>
+                <h2 id="discover-title">¿Qué te gustaría hacer?</h2>
+            </div>
+            <a class="text-link" href="#recursos">Ver todo <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="feature-grid">
+            <a class="feature-card card-lilac" href="#recursos">
+                <span class="feature-icon icon-purple" aria-hidden="true">✳</span>
+                <span class="feature-title">Conoce tu espacio</span>
+                <span class="feature-description">Descubre todo lo que tienes a tu alcance.</span>
+                <span class="card-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="feature-card card-mint" href="#recursos">
+                <span class="feature-icon icon-green" aria-hidden="true">✧</span>
+                <span class="feature-title">Encuentra inspiración</span>
+                <span class="feature-description">Ideas y novedades para dar el primer paso.</span>
+                <span class="card-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="feature-card card-peach" href="mailto:hola@nexo.example">
+                <span class="feature-icon icon-orange" aria-hidden="true">♡</span>
+                <span class="feature-title">Estamos para ayudarte</span>
+                <span class="feature-description">¿Tienes dudas? Nos encantará escucharte.</span>
+                <span class="card-arrow" aria-hidden="true">↗</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="resources container" id="recursos" aria-label="Recursos y ayuda">
+        <div class="resource-copy">
+            <span class="resource-icon" aria-hidden="true">✦</span>
+            <div>
+                <h2>Un pequeño paso a la vez</h2>
+                <p>No tienes que descubrirlo todo hoy. Aquí estaremos cuando nos necesites.</p>
+            </div>
+        </div>
+        <a class="button button-light" href="mailto:hola@nexo.example">Conoce más <span aria-hidden="true">→</span></a>
+    </section>
+</main>
+
+<footer class="footer container">
+    <a class="brand footer-brand" href="#inicio">
+        <span class="brand-mark" aria-hidden="true">n</span>
+        <span>nexo<span class="brand-dot">.</span></span>
+    </a>
+    <span>Hecho para que te sientas como en casa <span class="footer-heart" aria-hidden="true">♥</span></span>
+    <a href="mailto:hola@nexo.example">¿Necesitas ayuda?</a>
+</footer>
+</body>
+</html>
