@@ -1,6 +1,6 @@
-# Portal de bienvenida Nexo
+# Portal de práctica Spring Boot — Grupo 3
 
-Aplicación web de bienvenida desarrollada con Spring Boot, Thymeleaf y CSS adaptable a dispositivos móviles.
+Sitio web desarrollado con Spring Boot, Thymeleaf y CSS adaptable a dispositivos móviles para practicar la implementación de aplicaciones web.
 
 ## Requisitos
 

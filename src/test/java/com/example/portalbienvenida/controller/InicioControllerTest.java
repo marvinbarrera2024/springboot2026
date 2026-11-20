@@ -22,7 +22,8 @@ class InicioControllerTest {
     void muestraElPortalDeBienvenida() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(containsString("¡Qué bueno")))
-                .andExpect(content().string(containsString("¿Qué te gustaría hacer?")));
+                .andExpect(content().string(containsString("Aplicaciones")))
+                .andExpect(content().string(containsString("¿Qué vamos a practicar?")))
+                .andExpect(content().string(containsString("Grupo 3")));
     }
 }
