@@ -13,7 +13,29 @@ Sitio web desarrollado con Spring Boot, Thymeleaf y CSS adaptable a dispositivos
 mvn spring-boot:run
 ```
 
-Abre [http://localhost:8080](http://localhost:8080) para ver el portal.
+Abre [http://localhost:5000](http://localhost:5000) para ver el portal.
+
+## Generar y ejecutar el archivo JAR
+
+Empaqueta la aplicación con Maven:
+
+```bash
+mvn clean package
+```
+
+El archivo se genera en `target/portal-bienvenida-0.0.1-SNAPSHOT.jar`. Para ejecutarlo:
+
+```bash
+java -jar target/portal-bienvenida-0.0.1-SNAPSHOT.jar
+```
+
+## Cambiar el puerto
+
+Modifica `src/main/resources/application.properties` y ajusta la propiedad `server.port`. Actualmente está configurada en `5000`:
+
+```properties
+server.port=5000
+```
 
 ## Ejecutar con Docker
 
